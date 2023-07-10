@@ -51,6 +51,54 @@ app.get('/gadgetcentral',async (req,res) => {
     res.send(output)
 })
 
+//slider
+app.get('/slider',async (req,res) => {
+    let query = {};
+    let collection = "slider"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+//quicksearch
+app.get('/quicksearch',async (req,res) => {
+    let query = {};
+    let collection = "quicksearch"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+//bankoffer
+app.get('/bankoffer',async (req,res) => {
+    let query = {};
+    let collection = "bankoffer"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+//ad1
+app.get('/ad1',async (req,res) => {
+    let query = {};
+    let collection = "brandad1"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+//ad2
+app.get('/ad2',async (req,res) => {
+    let query = {};
+    let collection = "brandad2"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+//ad3
+app.get('/ad3',async (req,res) => {
+    let query = {};
+    let collection = "brandad3"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
 //New Arrival
 app.get('/newarrival',async (req,res) => {
     let query = {};
